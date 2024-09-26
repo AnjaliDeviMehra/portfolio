@@ -1,0 +1,45 @@
+@use "../../styles/mixins.scss" as *;
+
+.resume {
+  margin: 1rem;
+
+  @include tablet {
+    margin: 2rem;
+  }
+
+  &__heading {
+    @include tablet {
+      margin-bottom: 1rem;
+    }
+  }
+  &__download {
+    font-size: 0.7rem;
+    color: rgb(120, 120, 222);
+
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+
+  &__image-container {
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 1rem;
+
+    @include tablet {
+      margin-top: 2rem;
+    }
+  }
+
+  &__image {
+    width: 80vw;
+    margin: 1rem 0;
+    border: 1px solid black;
+
+    @include tablet {
+      margin: 3rem 0;
+    }
+  }
+}

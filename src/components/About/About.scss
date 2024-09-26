@@ -1,0 +1,108 @@
+@use "../../styles/mixins.scss" as *;
+
+.hero {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    margin: 3rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__section-one {
+    @include tablet {
+      width: 50%;
+    }
+  }
+
+  &__section-two {
+    text-align: center;
+    order: -1;
+    width: 60%;
+    margin: auto;
+    @include tablet {
+      text-align: right;
+      width: 50%;
+      order: 1;
+    }
+  }
+  &__intro {
+    margin: 1rem 1rem 1rem 0;
+    @include tablet {
+      font-size: 4rem;
+    }
+  }
+  &__name {
+    color: rgb(37, 37, 229);
+  }
+  &__hello {
+    display: inline;
+    margin-right: 0.7rem;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+  &__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline;
+
+    @include tablet {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+  &__tagline {
+    font-size: 0.7rem;
+
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+  &__photo {
+    width: 80%;
+    margin: 10%;
+    height: auto;
+    border-radius: 50%;
+
+    @include tablet {
+      width: 60%;
+      height: auto;
+
+      border-radius: 50%;
+    }
+  }
+}
+
+.story {
+  margin: 2rem 1rem;
+
+  @include tablet {
+    margin: 3rem;
+  }
+
+  &__heading {
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    @include tablet {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__context {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,8 +1,124 @@
-.nav {
-  background-color: black;
-  color: white;
+@use "../../styles/mixins.scss" as *;
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid white;
 
+  @include tablet {
+    display: none;
+  }
+  &__name {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+.nav-overlay {
+  position: fixed;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.nav-overlay--hidden {
+  display: none;
+}
+
+.close {
+  background: none;
+  border-radius: 50%;
+  border: none;
+  height: 1rem;
+  width: 1rem;
+  display: block;
+  margin: 1rem 1rem 1rem auto;
+
+  &__icon {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.close--hidden {
+  display: none;
+}
+.menu {
+  background: none;
+  border: none;
+  margin-left: auto;
+  height: 2rem;
+  width: 2rem;
+  display: block;
+
+  &__icon {
+    height: 100%;
+    width: 100%;
+  }
+}
+.nav {
+  list-style: none;
+  margin: 4rem 1rem 4rem 1.5rem;
+
+  &__list-item {
+    margin: 1rem 0;
+  }
+  &__link {
+    color: black;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  &__link--active {
+    @extend .nav__link;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
+  &__link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
+}
+
+.tablet-nav {
+  display: none;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid blue;
+  }
+
+  &__name {
+    color: white;
+    font-size: 1rem;
+  }
+  &__list {
+    list-style: none;
+
+    display: flex;
+  }
+  &__item {
+    margin-right: 1rem;
+  }
   &__link {
     color: white;
+    text-decoration: none;
+  }
+
+  &__link--active {
+    @extend .tablet-nav__link;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
   }
 }
