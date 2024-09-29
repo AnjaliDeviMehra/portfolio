@@ -14,9 +14,11 @@ import ms7 from "../../assets/image/ms7.png";
 
 export const Projects = () => {
   const [showProject, setShowProjct] = useState(0);
+  const [activeButton, setActiveButton] = useState("");
 
   const handleClick = (index) => {
     setShowProjct(index);
+    setActiveButton(index);
   };
   const projects = [
     {
@@ -37,6 +39,7 @@ export const Projects = () => {
         "Authentication: JWT (JSON Web Tokens)",
       ],
       src: "https://www.youtube.com/embed/sDJoKGRvAtY?si=S4yNYiIwkecSV4vB",
+      git: "https://github.com/AnjaliDeviMehra/project-management",
     },
     {
       title: "OpenEditor",
@@ -69,6 +72,7 @@ export const Projects = () => {
       ],
       techStack: ["React", "Sass"],
       images: [ms7, ms1, ms2, ms3, ms4, ms5, ms6],
+      git: "https://github.com/AnjaliDeviMehra/IndustryProject",
     },
   ];
 
@@ -76,7 +80,9 @@ export const Projects = () => {
     <>
       <div className="projects">
         <button
-          className="projects__buttons"
+          className={
+            showProject == 0 ? "projects__buttons--active" : "projects__buttons"
+          }
           onClick={() => {
             handleClick(0);
           }}
@@ -84,7 +90,9 @@ export const Projects = () => {
           Project Management App
         </button>
         <button
-          className="projects__buttons"
+          className={
+            showProject == 1 ? "projects__buttons--active" : "projects__buttons"
+          }
           onClick={() => {
             handleClick(1);
           }}
@@ -92,7 +100,9 @@ export const Projects = () => {
           OpenEditor
         </button>
         <button
-          className="projects__buttons"
+          className={
+            showProject == 2 ? "projects__buttons--active" : "projects__buttons"
+          }
           onClick={() => {
             handleClick(2);
           }}

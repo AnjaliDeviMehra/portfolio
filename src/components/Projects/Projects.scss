@@ -8,17 +8,26 @@
     margin: 0 3rem;
   }
   &__buttons {
-    background-color: rgb(241, 123, 123);
-    border: none;
+    background-color: transparent;
+    color: rgb(137, 127, 127);
     padding: 0.5rem;
-    border-radius: 2%;
-    color: white;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(223, 158, 135);
 
     margin: 1rem 0.5rem 0 0;
   }
 
-  &__buttons:active {
-    background-color: rgb(144, 154, 232);
+  &__buttons:hover {
+    border: 1px solid orangered;
+  }
+  &__buttons--active {
+    box-shadow: 4px 4px 8px rgba(103, 101, 101, 0.5);
+    background-color: transparent;
+    color: white;
+    border-radius: 5rem;
+    border: 1px solid orangered;
+    padding: 0.5rem;
+    margin: 1rem 0.5rem 0 0;
   }
 }
 .project {
@@ -43,6 +52,9 @@
     margin: 1rem auto;
   }
 
+  &__git {
+    color: rgb(14, 18, 227);
+  }
   &__image {
     width: 70vw;
     margin: auto;

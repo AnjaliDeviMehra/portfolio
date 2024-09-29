@@ -25,6 +25,11 @@ export const Project = ({ project }) => {
       <h1 className="project__title">{project.title}</h1>
 
       <h2 className="project__headline">Demo</h2>
+      {project.git && (
+        <a className="project__git" href={project.git}>
+          GitHub
+        </a>
+      )}
       <div>
         {(project.src && (
           <div className="project__video">
