@@ -26,28 +26,26 @@
   &__image-container {
     background-color: aliceblue;
     width: 80vw;
-
     height: 60vh;
-
     text-align: center;
     margin: 1rem auto 3rem;
 
     @include tablet {
       margin-top: 2rem;
       height: auto;
+      width: 80vw;
     }
   }
 
   &__image {
-    width: 60vw;
-    height: 50vh;
+    width: 100%;
+    height: 100%;
 
     border: 1px solid black;
 
-    margin: 1.5rem;
-
     @include tablet {
       margin: 3rem 0;
+      width: 60vw;
       height: auto;
     }
   }
