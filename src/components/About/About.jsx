@@ -70,7 +70,7 @@ export const About = () => {
           HTML, CSS, JavaScript, Node.js, Express.js, and MySQL. Working on
           projects like a project management app and a collaborative real-time
           document editor solidified my understanding of full-stack development
-          and allowed me to create meaningful, functional software.
+          and allowed me to create meaningful and functional softwares.
         </p>
         <p className="story__context">
           Today, I am more driven than ever to leverage my technical skills and
