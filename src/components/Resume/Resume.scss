@@ -23,8 +23,10 @@
 
   &__image-container {
     background-color: aliceblue;
-    width: 100%;
+    width: 80vw;
+    margin: auto;
     height: auto;
+
     text-align: center;
     margin-top: 1rem;
 
@@ -34,7 +36,7 @@
   }
 
   &__image {
-    width: 80vw;
+    width: 60vw;
     margin: 1rem 0;
     border: 1px solid black;
 

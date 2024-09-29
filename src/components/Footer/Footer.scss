@@ -1,0 +1,19 @@
+.footer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.2rem;
+}
+
+.link {
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 1rem;
+  }
+  &__icon--email {
+    @extend .link__icon;
+    height: 2.6rem;
+    width: 2.7rem;
+  }
+}

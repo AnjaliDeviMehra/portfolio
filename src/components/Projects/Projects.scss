@@ -1,0 +1,132 @@
+@use "../../styles/mixins.scss" as *;
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include tablet {
+    margin: 0 3rem;
+  }
+  &__buttons {
+    background-color: rgb(241, 123, 123);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 2%;
+    color: white;
+
+    margin: 1rem 0.5rem 0 0;
+  }
+
+  &__buttons:active {
+    background-color: rgb(144, 154, 232);
+  }
+}
+.project {
+  margin: 1rem;
+
+  @include tablet {
+    margin: 3rem;
+  }
+
+  &__title {
+    font-size: 1rem;
+
+    margin-bottom: 1rem;
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+  &__video {
+    display: block;
+    width: 80vw;
+
+    margin: 1rem auto;
+  }
+
+  &__image {
+    width: 70vw;
+    margin: auto;
+  }
+  &__demo {
+    width: 100%;
+    height: 50vh;
+
+    @include tablet {
+      height: 80vh;
+    }
+  }
+  &__section {
+    display: flex;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__headline {
+    font-size: 0.8rem;
+    padding-bottom: 0.3rem;
+    margin: 0.5rem 0;
+    @include tablet {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__description {
+    font-size: 0.7rem;
+    margin: 0.5rem 0;
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+
+  &__description--hide {
+    display: none;
+  }
+  &__list {
+    list-style: number;
+
+    margin: 0.5rem 1rem;
+    @include tablet {
+    }
+  }
+
+  &__list--hide {
+    display: none;
+  }
+  &__list-item {
+    font-size: 0.7rem;
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+
+  &__button {
+    background: none;
+    border: none;
+  }
+
+  &__button--hide {
+    display: none;
+  }
+}
+.tech-list {
+  list-style: none;
+  margin: 0.5rem 0;
+
+  &__item {
+    font-size: 0.7rem;
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+
+  &--hide {
+    display: none;
+  }
+}
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
