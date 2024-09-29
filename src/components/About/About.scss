@@ -1,12 +1,12 @@
 @use "../../styles/mixins.scss" as *;
 
 .hero {
-  margin: 2rem 1rem;
+  margin: 4rem 1rem 2rem;
   display: flex;
   flex-direction: column;
 
   @include tablet {
-    margin: 3rem;
+    margin: 4rem;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
