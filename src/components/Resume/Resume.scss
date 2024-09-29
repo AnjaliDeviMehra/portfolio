@@ -2,9 +2,11 @@
 
 .resume {
   margin: 4rem 1rem 0;
+  height: 80vh;
 
   @include tablet {
     margin: 5rem 3rem 0;
+    height: auto;
   }
 
   &__heading {
