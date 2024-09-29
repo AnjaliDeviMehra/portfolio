@@ -36,26 +36,7 @@ export const NavBar = () => {
               About
             </NavLink>
           </li>
-          <li className="nav__list-item">
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "nav__link--active" : "nav__link"
-              }
-              to="#education"
-            >
-              Education
-            </NavLink>
-          </li>
-          <li className="nav__list-item">
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "nav__link--active" : "nav__link"
-              }
-              to="#experience"
-            >
-              Experience
-            </NavLink>
-          </li>
+
           <li className="nav__list-item">
             <NavLink
               className={({ isActive }) =>

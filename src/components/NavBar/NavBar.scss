@@ -5,6 +5,12 @@
   align-items: center;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid white;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 
   @include tablet {
     display: none;
@@ -92,6 +98,12 @@
     justify-content: space-between;
     padding: 1rem 3rem;
     border-bottom: 1px solid blue;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 
   &__name {
