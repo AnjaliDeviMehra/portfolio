@@ -37,6 +37,12 @@
   }
   &__name {
     color: rgb(37, 37, 229);
+
+    @include tablet {
+      font-size: 4rem;
+
+      margin-left: 1rem;
+    }
   }
   &__hello {
     display: inline;
@@ -49,7 +55,8 @@
   &__icon {
     height: 1.5rem;
     width: 1.5rem;
-    display: inline;
+
+    animation: bounce;
 
     @include tablet {
       height: 2rem;

@@ -2,18 +2,26 @@ import React from "react";
 import "./About.scss";
 import hello from "../../assets/icons/wave.svg";
 import myImage from "../../assets/image/anjali.jpg";
+import "animate.css";
 
 export const About = () => {
   return (
     <>
       <div className="hero">
-        <section className="hero__section-one">
-          <p className="hero__hello">Hello</p>
-          <img src={hello} alt="" className="hero__icon" />
-
-          <h1 className="hero__intro">
-            I'm <span className="hero__name">Anjali Devi</span>
+        <section className="hero__section-one ">
+          <div>
+            <p className="hero__hello">Hello</p>
+            <img
+              src={hello}
+              alt=""
+              className="hero__icon  animate__animated animate__wobble animate__infinite	infinite"
+            />
+          </div>
+          <h1 className="hero__intro animate__animated animate__lightSpeedInLeft  animate__delay-0.5s	0.5s">
+            I'm
+            <span className="hero__name  ">Anjali Devi</span>
           </h1>
+
           <p className="hero__tagline">
             Passionate developer skilled in React, JavaScript, HTML, CSS, SASS,
             Express.js, Node.js and MySQL , dedicated to turning ideas into
@@ -21,7 +29,7 @@ export const About = () => {
           </p>
         </section>
 
-        <section className="hero__section-two">
+        <section className="hero__section-two  ">
           <img src={myImage} alt="photo" className="hero__photo" />
         </section>
       </div>
@@ -75,11 +83,9 @@ export const About = () => {
         <p className="story__context">
           Today, I am more driven than ever to leverage my technical skills and
           my deep customer service background to build user-centric, reliable,
-          and scalable web applications. I bring with me not only hands-on
-          technical expertise but also the interpersonal and problem-solving
-          skills that come from years of working closely with end users. I’m
-          ready and excited to kickstart my career as a full-stack developer,
-          where I can continue learning and growing while making an impact.
+          and scalable Solutions. I bring with me not only hands-on technical
+          expertise but also the interpersonal and problem-solving skills that
+          come from years of working closely with end users.
         </p>
       </div>
     </>
